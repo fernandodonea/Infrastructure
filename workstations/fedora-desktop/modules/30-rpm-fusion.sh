@@ -7,6 +7,9 @@
 #Steam, Discord, multimedia codecs, NVIDIA drivers, 
 #or pretty much any of the mainstream useful stuff.
 
+set -euo pipefail
+
+
 source "$(dirname "$0")/../lib/logger.sh"
 
 info "RPM Fusion"
