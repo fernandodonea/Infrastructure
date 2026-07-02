@@ -7,10 +7,10 @@
 #Steam, Discord, multimedia codecs, NVIDIA drivers, 
 #or pretty much any of the mainstream useful stuff.
 
+source "$(dirname "$0")/../lib/logger.sh"
 
 info "RPM Fusion"
 
-source "$(dirname "$0")/../lib/logger.sh"
 
 #installing rpm fusion
 if dnf repolist | grep -q "rpmfusion-free"; then

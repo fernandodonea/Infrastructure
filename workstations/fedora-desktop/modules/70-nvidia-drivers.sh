@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
 
+source "$(dirname "$0")/../lib/logger.sh"
+
 info "Installing Nvidia Drivers"
 
-source "$(dirname "$0")/../lib/logger.sh"
 
 
 if ! lspci | grep -i nvidia &> /dev/null; then
